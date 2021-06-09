@@ -214,7 +214,7 @@ function createTiles(parent, objects, compare){
             tile.appendChild(species);
             //picture = img
             let picture = document.createElement("img");
-            picture.setAttribute("src", `./images/${object.species}.png`);
+            picture.setAttribute("src", `./images/${object.species.toLowerCase()}.png`);
             tile.appendChild(picture);
             if (object.species != 'human' ){
                 let fact = document.createElement('p');
